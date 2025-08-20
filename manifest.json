@@ -1,0 +1,21 @@
+{
+  "name": "Progress Steps (PBF Pipeline)",
+  "organization": "Your Org",
+  "description": "Visualisasi langkah-langkah progress (Approach → Win) untuk tracking status kerja sama per PBF.",
+  "logoUrl": "https://www.gstatic.com/images/branding/product/2x/cloud_512dp.png",
+  "packageUrl": "https://developers.google.com/looker-studio/visualization",
+  "supportUrl": "https://developers.google.com/looker-studio/visualization",
+  "devMode": true,
+  "components": [
+    {
+      "id": "progress_steps",
+      "name": "Progress Steps",
+      "description": "Tracker status PBF dalam 6 langkah: Approach, Hanging, Warm, Hot, Follow Up, Win.",
+      "iconUrl": "https://www.gstatic.com/images/icons/material/system/2x/track_changes_black_48dp.png",
+      "resource": {
+        "js": "gs://YOUR_BUCKET/progress-steps/viz.js",
+        "config": "gs://YOUR_BUCKET/progress-steps/viz-config.json"
+      }
+    }
+  ]
+}
