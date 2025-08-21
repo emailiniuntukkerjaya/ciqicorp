@@ -1,0 +1,21 @@
+{
+  "status_field": {
+    "type": "string",
+    "label": "Status Field",
+    "description": "Kolom data yang berisi status (misalnya: status pipeline PBF).",
+    "default": "status"
+  },
+  "steps": {
+    "type": "array",
+    "label": "Steps",
+    "description": "Urutan langkah-langkah progress.",
+    "default": [
+      "Approach",
+      "Hanging",
+      "Warm",
+      "Hot",
+      "Follow Up",
+      "Win"
+    ]
+  }
+}
