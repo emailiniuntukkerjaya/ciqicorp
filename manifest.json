@@ -1,21 +1,26 @@
 {
-  "name": "Progress Steps (PBF Pipeline)",
-  "organization": "Ciqi Project",
-  "description": "Visualisasi langkah-langkah progress (Approach → Win) untuk tracking status kerja sama per PBF.",
-  "logoUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/logo.png",
-  "packageUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp",
-  "supportUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp/issues",
-  "devMode": true,
-  "components": [
-    {
-      "id": "progress_steps",
-      "name": "Progress Steps",
-      "description": "Tracker status PBF dalam 6 langkah: Approach, Hanging, Warm, Hot, Follow Up, Win.",
-      "iconUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/icon.png",
-      "resource": {
-        "js": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/viz.js",
-        "config": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/viz-config.json"
-      }
+  "label": "Process Tracker",
+  "id": "process_tracker",
+  "scripts": ["viz.js"],
+  "version": "0.0.2",
+  "options": {
+    "status_field": {
+      "type": "string",
+      "label": "Status Field",
+      "section": "Data",
+      "default": "your_model.status"
+    },
+    "steps": {
+      "type": "array",
+      "label": "Steps (in order)",
+      "section": "Setup",
+      "default": [
+        "Job Posting",
+        "Applications Screening",
+        "Assessment and Interviewing",
+        "Background Check",
+        "Job Offer"
+      ]
     }
-  ]
+  }
 }
