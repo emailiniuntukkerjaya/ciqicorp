@@ -2,7 +2,7 @@
   "name": "Progress Steps (PBF Pipeline)",
   "organization": "Ciqi Project",
   "description": "Visualisasi langkah-langkah progress (Approach → Win) untuk tracking status kerja sama per PBF.",
-  "logoUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/logo.png",
+  "logoUrl": "https://emailiniuntukkerjaya.github.io/ciqicorp/logo.png",
   "packageUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp",
   "supportUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp/issues",
   "devMode": true,
@@ -11,7 +11,7 @@
       "id": "progress_steps",
       "name": "Progress Steps",
       "description": "Tracker status PBF dalam 6 langkah: Approach, Hanging, Warm, Hot, Follow Up, Win.",
-      "iconUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/icon.png",
+      "iconUrl": "https://emailiniuntukkerjaya.github.io/ciqicorp/icon.png",
       "resource": {
         "js": "https://emailiniuntukkerjaya.github.io/ciqicorp/viz.js",
         "config": "https://emailiniuntukkerjaya.github.io/ciqicorp/viz-config.json"
