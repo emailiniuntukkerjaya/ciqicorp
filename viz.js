@@ -1,22 +1,16 @@
 looker.plugins.visualizations.add({
-  id: "process_tracker",
-  label: "Process Tracker",
+  id: "progress_steps",
+  label: "Progress Steps",
   options: {
     status_field: {
       type: "string",
       label: "Status Field",
-      default: "your_model.status"
+      default: "pbf.status"
     },
     steps: {
       type: "array",
       label: "Steps (in order)",
-      default: [
-        "Job Posting",
-        "Applications Screening",
-        "Assessment and Interviewing",
-        "Background Check",
-        "Job Offer"
-      ]
+      default: ["Approach", "Hanging", "Warm", "Hot", "Follow Up", "Win"]
     }
   },
 
@@ -30,17 +24,10 @@ looker.plugins.visualizations.add({
 
     const steps = config.steps || [];
     const statusField = config.status_field;
-    if (!statusField) {
-      container.innerHTML = "<p style='color:red'>⚠️ Please set Status Field in options</p>";
-      done();
-      return;
-    }
 
-    // Ambil status dari data pertama
     let currentStatus = null;
-    if (data.length > 0) {
-      const row = data[0];
-      currentStatus = row[statusField] ? row[statusField].value : null;
+    if (data.length > 0 && statusField) {
+      currentStatus = data[0][statusField]?.value || null;
     }
 
     steps.forEach((step, i) => {
@@ -53,15 +40,15 @@ looker.plugins.visualizations.add({
       circle.style.justifyContent = "center";
       circle.style.color = "white";
       circle.style.fontSize = "12px";
-      circle.style.margin = "0 10px";
       circle.style.fontWeight = "bold";
+      circle.style.margin = "0 10px";
 
       if (step === currentStatus) {
-        circle.style.background = "#ff6b6b"; // merah aktif
+        circle.style.background = "#ff6b6b"; // aktif
       } else if (steps.indexOf(currentStatus) > i) {
-        circle.style.background = "#2ecc71"; // hijau sudah lewat
+        circle.style.background = "#2ecc71"; // sudah lewat
       } else {
-        circle.style.background = "#bdc3c7"; // abu-abu belum mulai
+        circle.style.background = "#bdc3c7"; // belum mulai
       }
 
       circle.innerHTML = i + 1;
