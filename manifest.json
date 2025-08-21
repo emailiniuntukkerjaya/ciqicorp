@@ -1,20 +1,20 @@
 {
   "name": "Progress Steps (PBF Pipeline)",
-  "organization": "Your Org",
+  "organization": "Ciqi Project",
   "description": "Visualisasi langkah-langkah progress (Approach → Win) untuk tracking status kerja sama per PBF.",
-  "logoUrl": "https://www.gstatic.com/images/branding/product/2x/cloud_512dp.png",
-  "packageUrl": "https://developers.google.com/looker-studio/visualization",
-  "supportUrl": "https://developers.google.com/looker-studio/visualization",
+  "logoUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/logo.png",
+  "packageUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp",
+  "supportUrl": "https://github.com/emailiniuntukkerjaya/ciqicorp/issues",
   "devMode": true,
   "components": [
     {
       "id": "progress_steps",
       "name": "Progress Steps",
       "description": "Tracker status PBF dalam 6 langkah: Approach, Hanging, Warm, Hot, Follow Up, Win.",
-      "iconUrl": "https://www.gstatic.com/images/icons/material/system/2x/track_changes_black_48dp.png",
+      "iconUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/icon.png",
       "resource": {
-        "js": "gs://YOUR_BUCKET/progress-steps/viz.js",
-        "config": "gs://YOUR_BUCKET/progress-steps/viz-config.json"
+        "js": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/viz.js",
+        "config": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/viz-config.json"
       }
     }
   ]
