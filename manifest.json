@@ -13,7 +13,8 @@
       "description": "Tracker status PBF dalam 6 langkah: Approach, Hanging, Warm, Hot, Follow Up, Win.",
       "iconUrl": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/icon.png",
       "resource": {
-        "js": "https://raw.githubusercontent.com/emailiniuntukkerjaya/ciqicorp/main/viz.js"
+        "js": "https://emailiniuntukkerjaya.github.io/ciqicorp/viz.js",
+        "config": "https://emailiniuntukkerjaya.github.io/ciqicorp/viz-config.json"
       }
     }
   ]
